@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+<!--    Chấp nhận cleartext-->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.1.175</domain>
+        <trust-anchors>
+            <certificates src="@raw/certifate"/>
+        </trust-anchors>
+    </domain-config>
+</network-security-config>
